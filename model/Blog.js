@@ -1,62 +1,37 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
-    {
-        name: {
-            type: String,
-            required: [true, 'Username is required'],
-            unique: true,
-            trim: true,
-            minlength: [3, 'Username must be at least 3 characters'],
-            maxlength: [30, 'Username cannot exceed 30 characters']
-        },
-        email: {
-            type: String,
-            required: [true, 'Email is required'],
-            unique: true,
-            lowercase: true,
-            trim: true,
-            match: [/^\S+@\S+\.\S+$/, 'Please enter a valid email']
-        },
-        password: {
-            type: String,
-            required: [true, 'Password is required'],
-            minlength: [6, 'Password must be at least 6 characters'],
-            select: false 
-        },
-        role: {
-            type: String,
-            enum: ['user', 'admin'],
-            default: 'user'
-        },
-        articles: [
-            {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: 'Article'
-            }
-        ],
-        isActive: {
-            type: Boolean,
-            default: true
-        }
+const blogSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: [true, 'Title is required'],
+      trim: true,
+      maxlength: [200, 'Title cannot exceed 200 characters']
     },
-    { timestamps: true }
+    content: {
+      type: String,
+      required: [true, 'Content is required'],
+      minlength: [10, 'Content must be at least 10 characters']
+    },
+    author: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },
+    blogImage: {
+      type: String,
+      required: true
+    },
+    isPublished: {
+      type: Boolean,
+      default: true
+    }
+  },
+  { timestamps: true }
 );
 
 
-userSchema.pre('save', async function (next) {
-    if (!this.isModified('password')) return next();
 
-    
+const Blog = mongoose.model("BLog", blogSchema);
 
-    this.password = await bcrypt.hash(this.password, salt);
-    next();
-});
-
-
-userSchema.methods.matchPassword = async function (enteredPassword) {
-    return await bcrypt.compare(enteredPassword, this.password);
-};
-
-module.exports = mongoose.model('User', userSchema);
+export default Blog

@@ -1,14 +1,21 @@
-import express from "express";
 import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
+import express from "express";
 
 
-import HttpError from "./middleware/HttpError";
-import connectDB from "./config/db";
+import HttpError from "./middleware/HttpError.js";
+import connectDB from "./config/db.js";
+import userRoutes from "./routes/userRoutes.js";
+import blogRoutes from "./routes/blogRoutes.js"
 
 const app = express();
 
-app.use(express.json())
+
+app.use(express.json());
+
+app.use("/user", userRoutes);
+
+app.use("/blog", blogRoutes);
 
 app.get("/", (req, res) => {
     res.status(200).json("hello from server");
@@ -19,6 +26,9 @@ app.use((req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
+
+    // console.log("error:", error);
+
     if (res.headersSent) {
         return next(error);
     }
