@@ -70,9 +70,9 @@ Authorization: Bearer YOUR_TOKEN
 
 ```http
 POST /user/register
-<img width="1570" height="932" alt="Screenshot 2026-05-07 122949" src="https://github.com/user-attachments/assets/812e1ff1-0149-4c7d-9039-a4cc6243b0d2" />
 
 ```
+<img width="1570" height="932" alt="Screenshot 2026-05-07 122949" src="https://github.com/user-attachments/assets/812e1ff1-0149-4c7d-9039-a4cc6243b0d2" />
 
 ### Request Body
 
@@ -103,9 +103,9 @@ POST /user/register
 
 ```http
 POST /user/login
-<img width="1572" height="929" alt="Screenshot 2026-05-07 122901" src="https://github.com/user-attachments/assets/e5906102-5b71-48ba-99fd-d8f1b1ad61d3" />
 
 ```
+<img width="1572" height="929" alt="Screenshot 2026-05-07 122901" src="https://github.com/user-attachments/assets/e5906102-5b71-48ba-99fd-d8f1b1ad61d3" />
 
 ### Request Body
 
@@ -135,9 +135,9 @@ POST /user/login
 ```http
 POST /user/logOut
 
-<img width="1571" height="903" alt="Screenshot 2026-05-07 122854" src="https://github.com/user-attachments/assets/28403fca-a369-4f6d-9904-7bf6cea17680" />
 
 ```
+<img width="1571" height="903" alt="Screenshot 2026-05-07 122854" src="https://github.com/user-attachments/assets/28403fca-a369-4f6d-9904-7bf6cea17680" />
 
 ### Headers
 
@@ -163,9 +163,9 @@ Authorization: Bearer TOKEN
 ```http
 POST /user/logOutAll
 
-<img width="1567" height="924" alt="Screenshot 2026-05-07 123543" src="https://github.com/user-attachments/assets/24870512-b629-42ff-a02f-5ba29cde4344" />
 
 ```
+<img width="1567" height="924" alt="Screenshot 2026-05-07 123543" src="https://github.com/user-attachments/assets/24870512-b629-42ff-a02f-5ba29cde4344" />
 
 ### Headers
 
@@ -191,9 +191,9 @@ Authorization: Bearer TOKEN
 ```http
 GET /user/getAll
 
-<img width="1568" height="948" alt="Screenshot 2026-05-07 124515" src="https://github.com/user-attachments/assets/808a2946-bcb0-41b7-a1fc-76523eb9e913" />
 
 ```
+<img width="1568" height="948" alt="Screenshot 2026-05-07 124515" src="https://github.com/user-attachments/assets/808a2946-bcb0-41b7-a1fc-76523eb9e913" />
 
 ### Headers
 
@@ -219,9 +219,9 @@ Authorization: Bearer TOKEN
 ```http
 PATCH /user/update
 
-<img width="1567" height="912" alt="Screenshot 2026-05-07 124935" src="https://github.com/user-attachments/assets/87399878-cbb3-4c59-bb46-ab123ec51aac" />
 
 ```
+<img width="1567" height="912" alt="Screenshot 2026-05-07 124935" src="https://github.com/user-attachments/assets/87399878-cbb3-4c59-bb46-ab123ec51aac" />
 
 ### Request Body
 
@@ -250,9 +250,9 @@ PATCH /user/update
 ```http
 DELETE /user/delete
 
-<img width="1569" height="971" alt="Screenshot 2026-05-07 125708" src="https://github.com/user-attachments/assets/61f69748-db68-4bc0-a68d-d560fd75b5de" />
 
 ```
+<img width="1569" height="971" alt="Screenshot 2026-05-07 125708" src="https://github.com/user-attachments/assets/61f69748-db68-4bc0-a68d-d560fd75b5de" />
 
 ### Request Body
 
@@ -284,9 +284,9 @@ DELETE /user/delete
 ```http
 POST /blog/add
 
-<img width="1558" height="970" alt="Screenshot 2026-05-07 134119" src="https://github.com/user-attachments/assets/103ba38c-19d0-4f32-af91-094dadb9e8e4" />
 
 ```
+<img width="1558" height="970" alt="Screenshot 2026-05-07 134119" src="https://github.com/user-attachments/assets/103ba38c-19d0-4f32-af91-094dadb9e8e4" />
 
 ### Body (form-data)
 
@@ -314,9 +314,9 @@ POST /blog/add
 ```http
 GET /blog/getAllBlog
 
-<img width="1555" height="913" alt="Screenshot 2026-05-07 134656" src="https://github.com/user-attachments/assets/7dc1f4c9-be7f-4f33-b530-1dbb8c76a0b2" />
 
 ```
+<img width="1555" height="913" alt="Screenshot 2026-05-07 134656" src="https://github.com/user-attachments/assets/7dc1f4c9-be7f-4f33-b530-1dbb8c76a0b2" />
 
 ### Response
 
@@ -336,9 +336,9 @@ GET /blog/getAllBlog
 ```http
 GET /blog/getMyBlogs
 
-<img width="1564" height="987" alt="Screenshot 2026-05-07 140535" src="https://github.com/user-attachments/assets/243121e2-155c-486e-a6be-1d7f2f123ec9" />
 
 ```
+<img width="1564" height="987" alt="Screenshot 2026-05-07 140535" src="https://github.com/user-attachments/assets/243121e2-155c-486e-a6be-1d7f2f123ec9" />
 
 ### Headers
 
@@ -364,9 +364,9 @@ Authorization: Bearer TOKEN
 ```http
 PATCH /blog/update/:id
 
-<img width="1575" height="956" alt="Screenshot 2026-05-07 143020" src="https://github.com/user-attachments/assets/efbb6420-402b-45fc-8a94-223e7b55d3ea" />
 
 ```
+<img width="1575" height="956" alt="Screenshot 2026-05-07 143020" src="https://github.com/user-attachments/assets/efbb6420-402b-45fc-8a94-223e7b55d3ea" />
 
 ### Example
 
@@ -402,9 +402,9 @@ PATCH /blog/update/69fc49914edaa5c307945e58
 ```http
 DELETE /blog/deleteBlog/:id
 
-<img width="1568" height="977" alt="Screenshot 2026-05-07 142819" src="https://github.com/user-attachments/assets/12054dd4-af05-4847-baf2-5fed504b9e36" />
 
 ```
+<img width="1568" height="977" alt="Screenshot 2026-05-07 142819" src="https://github.com/user-attachments/assets/12054dd4-af05-4847-baf2-5fed504b9e36" />
 
 ### Example
 
